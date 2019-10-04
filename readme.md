@@ -5,7 +5,7 @@ Lynk is a new open-source Social network site built using Laravel 6.
 #### Contributing to Lynk
 
 * Fork repository
-* Create new branch Feat-username
+* Create new branch Feat-username ( please leave detailed Commit message we will not merge until we have more information)
 * Create Pull request
 
 You can also work on or log any issue. If you are working on issue please mark you are working on.
