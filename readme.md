@@ -1,6 +1,6 @@
 ![Alt text](public/assets/img/lynk_logo_trans.png?raw=true "Lynk Logo")
 
-Lynk is a new open-source Social network site built using Laravel 6.
+### Lynk is a new open-source Social network site built using Laravel 6.
 
 #### Contributing to Lynk
 
