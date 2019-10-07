@@ -26,13 +26,9 @@
         </div>
         <!-- POST COLUMN FOR DISPLAYING POSTS -->
         <div class="col-md-5">
-            <div class="card border-0">
+            <div class="card shadow-sm border-0 mb-2 p-2">
                 <div class="card-body">
-                    <div class="card shadow-sm border-0 mb-2 p-2">
-                        <div class="card-body">
 
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
