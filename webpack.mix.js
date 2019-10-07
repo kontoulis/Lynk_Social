@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,22 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+
+// Compile our Javascript files.
+mix.scripts([
+    'public/js/bootstrap.min.js',
+], 'public/js/app.js');
+
+mix.sass("public/css/main.scss", "public/css").styles(
+    [
+        "public/css/bootstrap.min.css",
+        "public/css/bootstrap-grid.min.css",
+        "public/css/main.css",
+    ],
+    "public/css/app.css"
+);
+
+// Only version files when Mix is running in production mode ("npm run production")
+if (mix.inProduction()) {
+    mix.version();
+}
