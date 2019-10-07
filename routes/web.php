@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/feed', function () {
+    return view('feed.index');
+});
