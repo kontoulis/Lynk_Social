@@ -2,8 +2,8 @@
 @section('content')
 @include("includes/_navigation")
 <style>
-    body{
-        background-color:white;
+    body {
+        background-color: white;
     }
 </style>
 <div class="head-section">
@@ -12,8 +12,8 @@
             <div class="col-md-6">
                 <h1 class="display-4 font-weight-bold">Lynk Social</h1>
                 <h5 class="font-weight-light text-secondary">It is a long established fact that a reader will be distracted </h5>
-                <a class="btn btn-home btn-md mt-2 mr-2" href="#" role="button">Join free</a>
-                <a class="btn btn-home btn-md mt-2" href="#" role="button">View on github</a>
+                <a class="btn btn-home btn-md mt-2 mr-2" href="/register" role="button">Join free</a>
+                <a class="btn btn-home btn-md mt-2" href="https://github.com/iiCe89/Lynk_Social" role="button" target="_blank">View on github</a>
             </div>
             <div class="col-md-6 pt-2">
                 <img src="/assets/img/Social.png" class="img-fluid">

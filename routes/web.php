@@ -14,18 +14,9 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/feed', 'HomeController@index')->name('feed');
 
-Route::get('/feed', function () {
-    return view('feed.index');
-});
+Auth::routes();
+Auth::routes(['verify' => true]);
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::get('/profile', function () {
-    return view('profile.index');
-});
-
-Route::get('/login', function () {
-    return view('auth.login');
-});
-Route::get('/register', function () {
-    return view('auth.register');
-});

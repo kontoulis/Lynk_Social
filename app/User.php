@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Ballen\Gravel\Gravatar;
 
 class User extends Authenticatable
 {
@@ -16,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username', 'email', 'password',
     ];
 
     /**
@@ -36,4 +37,21 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Returns the user's Gravatar avatar URL.
+     *
+     * @return string
+     */
+    public function getAvatarAttribute()
+    {
+        if ($this->getOriginal('avatar')) {
+            return '/storage/' . $this->getOriginal('avatar');
+        } else {
+            $avatar = new Gravatar($this->email);
+            $avatar->setDefaultAvatar("https://cdn0.iconfinder.com/data/icons/sport-achievment-badges/128/sport_badges-10-512.png");
+            $avatar->setSize(200);
+            return $avatar->buildGravatarUrl();
+        }
+    }
 }

@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a81ea5a73ebc29fdd013d76177a616e",
+    "content-hash": "8fadf8a7cd538a89be135a9181d6d7d0",
     "packages": [
+        {
+            "name": "ballen/gravel",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/allebb/gravel.git",
+                "reference": "1dc4f4fe7be3552589eb4e18f8b7c48da9918701"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/allebb/gravel/zipball/1dc4f4fe7be3552589eb4e18f8b7c48da9918701",
+                "reference": "1dc4f4fe7be3552589eb4e18f8b7c48da9918701",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ballen\\Gravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bobby Allen",
+                    "email": "ballen@bobbyallen.me",
+                    "homepage": "http://bobbyallen.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Gravel is a PHP library which provides easy access to get and display Gravatars.",
+            "homepage": "https://github.com/bobsta63/gravel",
+            "keywords": [
+                "avatar",
+                "gravatar"
+            ],
+            "time": "2016-01-26T20:04:08+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
