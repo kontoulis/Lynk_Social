@@ -22,3 +22,10 @@ Route::get('/feed', function () {
 Route::get('/profile', function () {
     return view('profile.index');
 });
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+Route::get('/register', function () {
+    return view('auth.register');
+});

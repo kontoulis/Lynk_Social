@@ -7,6 +7,7 @@
 body {
   font-family: "Barlow", sans-serif;
   font-size: 16px;
+  background-color: #edf2f7;
 }
 
 .alert-message {
@@ -47,5 +48,10 @@ body {
   border-style: solid;
   border-color: black;
   border-width: 1px;
+}
+
+.form-control {
+  background-color: #EDF2F7;
+  border: 0;
 }
 

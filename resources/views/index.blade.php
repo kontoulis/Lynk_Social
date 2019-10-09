@@ -1,6 +1,11 @@
 @extends('layout.app')
 @section('content')
 @include("includes/_navigation")
+<style>
+    body{
+        background-color:white;
+    }
+</style>
 <div class="head-section">
     <div class="container d-flex pt-5">
         <div class="row align-items-center h-100">
