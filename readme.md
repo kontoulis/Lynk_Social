@@ -5,9 +5,14 @@
 #### Getting set up
 
 * Fork repo
-* cd into folder once pulled down locally
-* composer install
-* npm install
+
+```shell
+git clone  addurlhere
+cd lynk_social
+cp .env.example .env
+composer install
+```
+
 * set up mysql DB and add db name/username/password in .env
 * run php artisan migrate
 * create new branch 'Feat-username'
@@ -19,6 +24,7 @@ Now you can begin working on Lynk-Social.
 
 Lynk social is a twitter like social network. currently in the very early stages. The issue log will list whats needed to get this off the ground and hopefully soon make live for testing.
 
+[Find what needs workied on here](https://github.com/iiCe89/Lynk_Social/issues)
 
 #### Learning Laravel
 
