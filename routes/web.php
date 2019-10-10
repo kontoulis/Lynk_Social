@@ -14,9 +14,16 @@
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/feed', 'HomeController@index')->name('feed');
 
 Auth::routes();
-Auth::routes(['verify' => true]);
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
+Auth::routes(['verify' => true]);
+
+Route::group(['middleware' => 'auth', 'except' => 'api'], function () {
+    Route::get('feed', 'HomeController@index')->name('feed');
+    Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+    Route::group(['middleware' => 'not_self',], function () {
+        Route::get('profile/{user}/follow', 'UserController@followUser')->name('user.follow');
+        Route::get('profile/{user}/unfollow', 'UserController@unFollowUser')->name('user.unfollow');
+    });
+});
