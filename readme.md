@@ -2,14 +2,22 @@
 
 ### Lynk is a new open-source Social network site built using Laravel 6.
 
+#### Getting set up
+
+* Fork repo
+* cd into folder once pulled down locally
+* composer install
+* npm install
+* set up mysql DB and add db name/username/password in .env
+* run php artisan migrate
+* create new branch 'Feat-username'
+
+Now you can begin working on Lynk-Social.
+
+
 #### Contributing to Lynk
 
-* Fork repository
-* Create new branch Feat-username ( please leave detailed Commit message we will not merge until we have more information)
-* Create Pull request
-
-You can also work on or log any issue. If you are working on issue please mark you are working on.
-Create a new label ( in-progress-username ) so people are aware and dont clash.
+Lynk social is a twitter like social network. currently in the very early stages. The issue log will list whats needed to get this off the ground and hopefully soon make live for testing.
 
 
 #### Learning Laravel
